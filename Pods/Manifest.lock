@@ -1,0 +1,28 @@
+PODS:
+  - BonMot (5.3)
+  - MarqueeLabel/Swift (3.2.0)
+  - NotificationBannerSwift (1.8.0):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.0.1)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - BonMot
+  - NotificationBannerSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BonMot
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  BonMot: 0104d1b4eda54f4a4b7393d6559539ef25498fbd
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  NotificationBannerSwift: 49fc4be7fabada55b189b50e72184c92edd5f7f7
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: d30a6390f3d85af56db80682b1f0ba81df219aa7
+
+COCOAPODS: 1.5.3

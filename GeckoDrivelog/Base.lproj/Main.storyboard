@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Neue Fahrt-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="DriveViewController" customModule="GeckoDrivelog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8nc-5w-xaH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gefahrene Kilometer: 0.00 Fahrt: Keine" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="none" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpe-qM-O07">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybridFlyover" zoomEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDT-ss-R4N">
+                                        <rect key="frame" x="0.0" y="16" width="414" height="713.5"/>
+                                    </mapView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvC-T8-5XC">
+                                        <rect key="frame" x="0.0" y="729.5" width="414" height="39.5"/>
+                                        <items>
+                                            <barButtonItem title="Fahrt beginnen" id="Ztg-mG-EFJ">
+                                                <connections>
+                                                    <action selector="DriveBeginButtonClicked:" destination="9pv-A4-QxB" id="CvF-pg-TOD"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Einstellungen" id="OSQ-G0-W09"/>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8nc-5w-xaH" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="0z8-sB-Ohi"/>
+                            <constraint firstItem="8nc-5w-xaH" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="7TE-UR-RmX"/>
+                            <constraint firstItem="8nc-5w-xaH" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="B7b-TI-0Lj"/>
+                            <constraint firstItem="8nc-5w-xaH" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ioG-c6-TN9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Neue Fahrt" image="fahren" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="DriveBeginButton" destination="Ztg-mG-EFJ" id="sf9-92-1hw"/>
+                        <outlet property="Map" destination="wDT-ss-R4N" id="2cp-4t-bra"/>
+                        <outlet property="StatusLabel" destination="Wpe-qM-O07" id="Khr-29-blZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+        <!--Neue Fahrt-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController title="Neue Fahrt" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="PHI-Tx-lU2" kind="relationship" relationship="viewControllers" id="p5Q-cM-Ytj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Vergangene Fahrten-->
+        <scene sceneID="bHX-Aq-rPP">
+            <objects>
+                <tableViewController title="Vergangene Fahrten" extendedLayoutIncludesOpaqueBars="YES" id="PHI-Tx-lU2" customClass="TableViewController" customModule="GeckoDrivelog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xHP-5u-Qoa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellItem" textLabel="MZN-7a-fRP" detailTextLabel="km5-vL-bDd" style="IBUITableViewCellStyleSubtitle" id="VUS-lg-Hj0">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VUS-lg-Hj0" id="b7X-eX-C7T">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="TEst" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZN-7a-fRP">
+                                            <rect key="frame" x="20" y="5" width="34.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="km5-vL-bDd">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="PHI-Tx-lU2" id="avS-lu-yz0"/>
+                            <outlet property="delegate" destination="PHI-Tx-lU2" id="Y9F-Uv-kAK"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Vergangene Fahrten" image="vergangen" id="fJu-Pg-Qbf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1x-pU-IHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fahren" width="38" height="38"/>
+        <image name="vergangen" width="38" height="38"/>
+    </resources>
+</document>

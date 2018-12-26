@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E23269021CF9CBC008B9B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23268F21CF9CBC008B9B42 /* AppDelegate.swift */; };
+		9E23269221CF9CBC008B9B42 /* DriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23269121CF9CBC008B9B42 /* DriveViewController.swift */; };
+		9E23269421CF9CBC008B9B42 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23269321CF9CBC008B9B42 /* TableViewController.swift */; };
+		9E23269721CF9CBC008B9B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23269521CF9CBC008B9B42 /* Main.storyboard */; };
+		9E23269921CF9CBD008B9B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E23269821CF9CBD008B9B42 /* Assets.xcassets */; };
+		9E23269C21CF9CBD008B9B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E23269A21CF9CBD008B9B42 /* LaunchScreen.storyboard */; };
+		9ED149B921D275EE007FA436 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED149B821D275EE007FA436 /* Utils.swift */; };
+		9EE931CF21CFC8E9002E8655 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE931CE21CFC8E9002E8655 /* MapKit.framework */; };
+		D33001F50C1E6681D24E9238 /* Pods_GeckoDrivelog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2600EFE3F43D8736BD43921A /* Pods_GeckoDrivelog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E951E3C21D28D9000591FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46ABD51C335A794F8014E26F908C78F1;
+			remoteInfo = BonMot;
+		};
+		9E951E3E21D28D9000591FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E02D331BC1C6B130E8A5E3C328B7C678;
+			remoteInfo = MarqueeLabel;
+		};
+		9E951E4021D28D9000591FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D6B5FF2E4A6F59F15DFF454CAEEE631;
+			remoteInfo = NotificationBannerSwift;
+		};
+		9E951E4221D28D9000591FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B9E97D2ECFC6C6D2B6F380FAB56D0EC9;
+			remoteInfo = "Pods-GeckoDrivelog";
+		};
+		9E951E4421D28D9000591FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 120851A8EA609F6BC6A162B117414A6F;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2600EFE3F43D8736BD43921A /* Pods_GeckoDrivelog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeckoDrivelog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C628D6F2F3DD242C276662 /* Pods-GeckoDrivelog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeckoDrivelog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeckoDrivelog/Pods-GeckoDrivelog.debug.xcconfig"; sourceTree = "<group>"; };
+		9E23268C21CF9CBC008B9B42 /* GeckoDrivelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeckoDrivelog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E23268F21CF9CBC008B9B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E23269121CF9CBC008B9B42 /* DriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriveViewController.swift; path = GeckoDrivelog/DriveViewController.swift; sourceTree = SOURCE_ROOT; };
+		9E23269321CF9CBC008B9B42 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9E23269621CF9CBC008B9B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E23269821CF9CBD008B9B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E23269B21CF9CBD008B9B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E23269D21CF9CBD008B9B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4E082521D2897200544E87 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		9E951E3421D28D9000591FA1 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		9EB29E2B21D290300049FE75 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = "<group>"; };
+		9ED149B821D275EE007FA436 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9EE931CE21CFC8E9002E8655 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9EE931D021D00D72002E8655 /* test.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; name = test.gpx; path = ../../../../Users/nilskleinert/Downloads/test.gpx; sourceTree = "<group>"; };
+		EF3227D47E54F73C57B7DD03 /* Pods-GeckoDrivelog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeckoDrivelog.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeckoDrivelog/Pods-GeckoDrivelog.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E23268921CF9CBC008B9B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE931CF21CFC8E9002E8655 /* MapKit.framework in Frameworks */,
+				D33001F50C1E6681D24E9238 /* Pods_GeckoDrivelog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54A405500E95D47482C09D2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71C628D6F2F3DD242C276662 /* Pods-GeckoDrivelog.debug.xcconfig */,
+				EF3227D47E54F73C57B7DD03 /* Pods-GeckoDrivelog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E23268321CF9CBC008B9B42 = {
+			isa = PBXGroup;
+			children = (
+				9EE931D021D00D72002E8655 /* test.gpx */,
+				9E23268E21CF9CBC008B9B42 /* GeckoDrivelog */,
+				9E23268D21CF9CBC008B9B42 /* Products */,
+				9EE931CD21CFC8E9002E8655 /* Frameworks */,
+				54A405500E95D47482C09D2E /* Pods */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		9E23268D21CF9CBC008B9B42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E23268C21CF9CBC008B9B42 /* GeckoDrivelog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E23268E21CF9CBC008B9B42 /* GeckoDrivelog */ = {
+			isa = PBXGroup;
+			children = (
+				9E23268F21CF9CBC008B9B42 /* AppDelegate.swift */,
+				9E23269121CF9CBC008B9B42 /* DriveViewController.swift */,
+				9ED149B821D275EE007FA436 /* Utils.swift */,
+				9E23269321CF9CBC008B9B42 /* TableViewController.swift */,
+				9E23269521CF9CBC008B9B42 /* Main.storyboard */,
+				9E23269821CF9CBD008B9B42 /* Assets.xcassets */,
+				9E23269A21CF9CBD008B9B42 /* LaunchScreen.storyboard */,
+				9E23269D21CF9CBD008B9B42 /* Info.plist */,
+			);
+			path = GeckoDrivelog;
+			sourceTree = "<group>";
+		};
+		9E951E3521D28D9000591FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E951E3D21D28D9000591FA1 /* BonMot.framework */,
+				9E951E3F21D28D9000591FA1 /* MarqueeLabel.framework */,
+				9E951E4121D28D9000591FA1 /* NotificationBannerSwift.framework */,
+				9E951E4321D28D9000591FA1 /* Pods_GeckoDrivelog.framework */,
+				9E951E4521D28D9000591FA1 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EE931CD21CFC8E9002E8655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB29E2B21D290300049FE75 /* DerivedData */,
+				9E951E3421D28D9000591FA1 /* Pods.xcodeproj */,
+				9E4E082521D2897200544E87 /* Pods */,
+				9EE931CE21CFC8E9002E8655 /* MapKit.framework */,
+				2600EFE3F43D8736BD43921A /* Pods_GeckoDrivelog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E23268B21CF9CBC008B9B42 /* GeckoDrivelog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E2326A021CF9CBD008B9B42 /* Build configuration list for PBXNativeTarget "GeckoDrivelog" */;
+			buildPhases = (
+				E0C81BDB2130A182F7CDF6AF /* [CP] Check Pods Manifest.lock */,
+				9E23268821CF9CBC008B9B42 /* Sources */,
+				9E23268921CF9CBC008B9B42 /* Frameworks */,
+				9E23268A21CF9CBC008B9B42 /* Resources */,
+				D580AA25DCFAD1810E96010B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeckoDrivelog;
+			productName = GeckoDrivelog;
+			productReference = 9E23268C21CF9CBC008B9B42 /* GeckoDrivelog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E23268421CF9CBC008B9B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Nils Kleinert";
+				TargetAttributes = {
+					9E23268B21CF9CBC008B9B42 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9E23268721CF9CBC008B9B42 /* Build configuration list for PBXProject "0" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E23268321CF9CBC008B9B42;
+			productRefGroup = 9E23268D21CF9CBC008B9B42 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E951E3521D28D9000591FA1 /* Products */;
+					ProjectRef = 9E951E3421D28D9000591FA1 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9E23268B21CF9CBC008B9B42 /* GeckoDrivelog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E951E3D21D28D9000591FA1 /* BonMot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BonMot.framework;
+			remoteRef = 9E951E3C21D28D9000591FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E951E3F21D28D9000591FA1 /* MarqueeLabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MarqueeLabel.framework;
+			remoteRef = 9E951E3E21D28D9000591FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E951E4121D28D9000591FA1 /* NotificationBannerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NotificationBannerSwift.framework;
+			remoteRef = 9E951E4021D28D9000591FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E951E4321D28D9000591FA1 /* Pods_GeckoDrivelog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_GeckoDrivelog.framework;
+			remoteRef = 9E951E4221D28D9000591FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9E951E4521D28D9000591FA1 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 9E951E4421D28D9000591FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E23268A21CF9CBC008B9B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E23269C21CF9CBD008B9B42 /* LaunchScreen.storyboard in Resources */,
+				9E23269921CF9CBD008B9B42 /* Assets.xcassets in Resources */,
+				9E23269721CF9CBC008B9B42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D580AA25DCFAD1810E96010B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeckoDrivelog/Pods-GeckoDrivelog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BonMot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeckoDrivelog/Pods-GeckoDrivelog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C81BDB2130A182F7CDF6AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeckoDrivelog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E23268821CF9CBC008B9B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E23269421CF9CBC008B9B42 /* TableViewController.swift in Sources */,
+				9E23269021CF9CBC008B9B42 /* AppDelegate.swift in Sources */,
+				9E23269221CF9CBC008B9B42 /* DriveViewController.swift in Sources */,
+				9ED149B921D275EE007FA436 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E23269521CF9CBC008B9B42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E23269621CF9CBC008B9B42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E23269A21CF9CBD008B9B42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E23269B21CF9CBD008B9B42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E23269E21CF9CBD008B9B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E23269F21CF9CBD008B9B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E2326A121CF9CBD008B9B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C628D6F2F3DD242C276662 /* Pods-GeckoDrivelog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQFZDVZ7PG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/GeckoDrivelog/Build/Products/Debug-iphonesimulator",
+				);
+				INFOPLIST_FILE = GeckoDrivelog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SRCROOT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = de.nilskleinert.GeckoDrivelog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E2326A221CF9CBD008B9B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3227D47E54F73C57B7DD03 /* Pods-GeckoDrivelog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQFZDVZ7PG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/GeckoDrivelog/Build/Products/Debug-iphonesimulator",
+				);
+				INFOPLIST_FILE = GeckoDrivelog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SRCROOT)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = de.nilskleinert.GeckoDrivelog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E23268721CF9CBC008B9B42 /* Build configuration list for PBXProject "0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E23269E21CF9CBD008B9B42 /* Debug */,
+				9E23269F21CF9CBD008B9B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9E2326A021CF9CBD008B9B42 /* Build configuration list for PBXNativeTarget "GeckoDrivelog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E2326A121CF9CBD008B9B42 /* Debug */,
+				9E2326A221CF9CBD008B9B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E23268421CF9CBC008B9B42 /* Project object */;
+}
